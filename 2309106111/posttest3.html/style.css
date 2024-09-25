@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+a {
+    list-style-type: none;
+}
+
+body {
+    background: url(latar.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    backdrop-filter: blur(25px);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-logo h1 {
+    font-size: 20px;
+
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+   margin-right: 290px;
+}
+
+.navbar-menu li {
+    list-style-type: none;
+
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 99px;
+    transition: 150ms;
+}
+
+.navbar-menu li a:hover {
+    background: green;
+}
+
+input {
+    display: none;
+}
+
+.footbar-item {
+    display: flex;
+    gap: 2px;
+}
+
+.footbar-item li {
+    list-style-type: none;
+}
+
+.footbar-item li a {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px 2px;
+    border-radius: 99px;
+    transition: 150ms;
+}
+
+.footbar-item li a:hover {
+    background: green;
+}
+.
+
+}
+
+
+@media screen and (max-width: 952px) {
+    .navbar-menu {
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        right: 0;
+        padding: 0px 0px;
+        height: 0;
+        overflow: hidden;
+        transition: 400ms;
+    }
+    input:checked ~ .navbar-menu {
+        height: 100vh;
+        padding: 50px 0px;
+    }
+    .menu {
+        display: block;
+        width: 60px;
+    }
+    .menu label {
+        border: solid;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 15px;
+    }
+    .x-icon {
+        display: none;
+    }
+    input:checked ~ .menu .line-icon {
+        display: none;
+    }
+    input:checked ~ .menu .x-icon {
+        display: block;
+    }
+}
+
+}
