@@ -1,0 +1,767 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+*,
+html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.897);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  z-index: 9999999999999999999;
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid rgb(32, 31, 31);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: hsl(0, 13%, 82%);
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  font-size: 20px;
+}
+nav div img {
+  width: 70px;
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid black;
+}
+
+.teks-1 {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+  font-family: "Expletus Sans";
+  font-size: 30px;
+}
+.teks-logo {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+  font-family: "Expletus Sans";
+  font-size: 30px;
+  color: hsl(0, 13%, 82%);
+}
+nav div {
+  display: flex;
+}
+.video-1 {
+  width: 100%;
+  height: 501px;
+  margin-top: 80px;
+}
+.menu-icon {
+  /* background-color: brown; */
+  font-size: 28px;
+  display: none;
+}
+.menu-icon-1 {
+  /* background-color: brown; */
+  font-size: 28px;
+  display: none;
+}
+.fa-cart-plus {
+  font-size: 30px;
+  position: fixed;
+  top: 28px;
+  right: 20px;
+  color: rgb(164, 168, 168);
+  font-weight: 600;
+}
+.fa-cart-plus:hover {
+  color: orangered;
+}
+
+.footer-mom {
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: #343434;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+footer div ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer div ul li a:hover {
+  color: #f18930;
+  border-bottom: 1px solid #f18930;
+}
+footer div ul {
+  list-style: none;
+}
+.icon {
+  display: flex;
+  gap: 1rem;
+  size: px;
+}
+.footer-bottom {
+  text-align: center;
+  background-color: #f18930;
+}
+.us {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 15px;
+}
+.links {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 15px;
+}
+.follow {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 15px;
+}
+.icon-instagram {
+  font-size: 25px;
+}
+.icon-facebook {
+  font-size: 25px;
+}
+.icon-twitter {
+  font-size: 25px;
+}
+.icon-github {
+  font-size: 25px;
+}
+.fa-envelope {
+  padding-right: 10px;
+}
+.fa-phone {
+  padding-right: 10px;
+}
+.fa-user {
+  padding-right: 10px;
+}
+.fa-location-dot {
+  padding-right: 10px;
+}
+
+.fa-solid {
+  padding-right: 10px;
+  padding-left: 30px;
+}
+.fa-cart-shopping {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.home {
+  transform: translate(-15px);
+}
+.gambar-carl {
+  padding-left: 10px;
+  padding-top: 40px;
+}
+.garis-1 {
+  width: 1324px;
+  height: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  background-color: white;
+}
+.garis-1:hover {
+  background-color: #ff7700;
+  /* border-bottom: 1px solid #f18930; */
+}
+.line-3 {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 260px;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+.utama {
+  display: flex;
+}
+.teks-carl {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  color: white;
+}
+.teks-carl2 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: white;
+}
+.teks-carl3 {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 19px;
+  color: white;
+}
+.teks-carl4 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: white;
+}
+.line-2 {
+  width: 1324px;
+  height: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  background-color: white;
+}
+.mok {
+  display: flex;
+  padding-left: 48px;
+  padding-bottom: 16px;
+  gap: 1rem;
+}
+.mok-1 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-2 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-3 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-4 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mokk {
+  display: flex;
+  padding-left: 48px;
+  padding-bottom: 16px;
+  gap: 1rem;
+}
+.mok-5 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-6 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-7 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-8 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mokkk {
+  display: flex;
+  padding-left: 48px;
+  padding-bottom: 50px;
+  gap: 1rem;
+}
+.mok-9 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-10 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-11 {
+  width: 300px;
+  border-radius: 20px;
+}
+.mok-12 {
+  width: 300px;
+  border-radius: 20px;
+}
+.brand-1 {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  padding-left: 600px;
+  padding-bottom: 48px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-icon-1 {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul.hidden-1 {
+    display: none;
+  }
+}
+
+/* seiko brand */
+.seiko-brand {
+  padding-left: 15px;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.seiko-brand a:hover {
+  color: #f18930;
+  border-bottom: 1px solid #f18930;
+}
+.seiko-brand-1 {
+  text-decoration: none;
+  color: #00ffff;
+}
+.logo-brand {
+  height: 50px;
+}
+.logo-brand-fossil {
+  height: 50px;
+  width: 140px;
+}
+/* .seiko-1{
+    max-height:100%;
+    max-width:100%;
+    object-fit: fill;
+    background-position: center;
+
+} */
+.tabel-seiko-1 {
+  /* border: 2px solid white; */
+  height: 220px;
+  width: 220px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.produk-1 {
+  height: 200px;
+  background-image: url(seiko/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-2 {
+  height: 200px;
+  background-image: url(seiko/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-3 {
+  height: 200px;
+  background-image: url(seiko/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-4 {
+  height: 200px;
+  background-image: url(seiko/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-5 {
+  height: 200px;
+  background-image: url(seiko/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-6 {
+  height: 200px;
+  background-image: url(fossil/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-7 {
+  height: 200px;
+  background-image: url(fossil/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-8 {
+  height: 200px;
+  background-image: url(fossil/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-9 {
+  height: 200px;
+  background-image: url(fossil/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-10 {
+  height: 200px;
+  background-image: url(fossil/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-11 {
+  height: 200px;
+  background-image: url(cartier/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-12 {
+  height: 200px;
+  background-image: url(cartier/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-13 {
+  height: 200px;
+  background-image: url(cartier/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-14 {
+  height: 200px;
+  background-image: url(cartier/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.produk-15 {
+  height: 200px;
+  background-image: url(cartier/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tabel-produk-1 {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(131, 131, 134);
+  box-shadow: 5px 0 8px rgb(131, 131, 134);
+  background-color: #222121b7;
+  margin-left: 15px;
+  margin-top: 20px;
+  z-index: 1;
+  font-family: sans-serif;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.tabel-produk-1:hover {
+  transform: translateZ(20px) scale(1.05);
+}
+.lingkaran-utama {
+  display: flex;
+  justify-content: space-between;
+}
+.lingkaran-1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  /* border: 2px solid white; */
+  margin-left: 5px;
+}
+.lingkaran-2 {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.fa-heart {
+  font-size: 25px;
+  color: rgb(131, 131, 134);
+}
+
+.keterangan-1 {
+  color: rgb(206, 218, 218);
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.keterangan-harga {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: sans-serif;
+  color: #ffa500;
+  font-size: 20px;
+  font-weight: 600;
+}
+.keterangan-discount {
+  padding-left: 10px;
+  color: rgb(164, 168, 168);
+  text-decoration: line-through;
+}
+.keterangan-1 {
+  display: flex;
+  padding-top: 5px;
+  gap: 5px;
+}
+
+.fa-star {
+  padding: 0px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.penjualan {
+  display: flex;
+  gap: 1rem;
+}
+.penjualan-cartier {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+.icons-produk {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-cart-shopping {
+  font-size: 30px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: #b6801d;
+}
+.fa-cart-shopping:hover {
+  color: rgb(52, 134, 134);
+}
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 30rem;
+  padding: 0 1.5rem;
+  color: rgb(77, 74, 74);
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+.shopping-cart.active {
+  right: 0;
+}
+.cart-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed gray;
+}
+.shopping-cart img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+}
+.item-detail h3 {
+  color: #343434;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.item-price {
+  color: darkred;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.fa-trash-can {
+  position: relative;
+  right: -140px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #343434;
+  z-index: 999999;
+}
+.fa-trash-can:hover {
+  color: #f30957;
+}
+.kelas-detail {
+  display: none;
+  position: fixed;
+  z-index: 999999999999999999999999999999999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.detail-kontainer {
+  position: relative;
+  background-color: #fefefe;
+  color: black;
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 600px;
+  height: 600px;
+  animation: animateModal 0.5s;
+}
+.detail-kontainer .fa-xmark {
+  position: absolute;
+  right: 1rem;
+}
+.detail-kontent {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.detail-kontent img {
+  height: 10rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.produk-kontent h3 {
+  font-family: sans-serif;
+}
+.detail-teks {
+  font-family: sans-serif;
+}
+.detail-harga {
+  color: #fa0505;
+  font-weight: 900;
+  padding-top: 10px;
+  font-size: 20px;
+}
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to{
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.shopping-cart {
+  display: block;
+}
+.ucapan-terimakasih{
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  transform: translate(150px,10px);
+  
+}
+.tabel-akhir{
+  margin-top: 20px;
+}
+.tombol-beli{
+  transform: translate(200px,-10px);
+}
+.tombolnya{
+  width: 80px;
+  height: 40px;
+  background-color: #00ffff;
+}
+.jumlah-beli{
+  transform: translate(180px ,-90px);
+}
+.tombol-kiri{
+  width: 25px;
+  height: 25px;
+}
+.tombol-kanan{
+  width: 25px;
+  height: 25px;
+}
+.tabel-tampilan{
+  width: 25px;
+  height: 25px;
+}
+.posisi-kelas{
+  transform: translate(180px,-60px);
+}
+.kelas-harga-akhir{
+  padding-bottom: 15px;
+  font-weight: 700;
+  color: red;
+}
+.total-harga-akhir{
+  font-size: 20px;
+  color: red;
+}

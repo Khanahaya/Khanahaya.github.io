@@ -1,0 +1,47 @@
+/* .teks-1 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 25px;
+}
+.tabel-teks-1 {
+  transform: translate(600px, 10px);
+}
+.tabel-struk {
+  transform: translate(500px, 10px);
+} */
+
+.struk-pembelian {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.struk-pembelian h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.struk-pembelian hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.detail-produk p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.detail-produk span {
+  font-weight: bold;
+}
+.kembali-belanja {
+  background-color: rgb(108, 124, 124);
+  font-weight: 900;
+}
