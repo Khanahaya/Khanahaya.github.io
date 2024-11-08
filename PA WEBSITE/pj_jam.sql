@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Nov 2024 pada 07.53
+-- Waktu pembuatan: 08 Nov 2024 pada 18.20
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -24,63 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
---
-
-CREATE TABLE `admin` (
-  `username` varchar(100) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
-INSERT INTO 'admin' (username, password) VALUES
-('admin', MD5('admin123'));  -- menggunakan hash MD5 untuk keamanan
-
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_brand`
---
-
-CREATE TABLE `tb_brand` (
-  `id_brand` int(100) NOT NULL,
-  `nama_brand` varchar(100) NOT NULL,
-  `gambar` varchar(255) NOT NULL,
-  `deskripsi` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_order`
---
-
-CREATE TABLE `tb_order` (
-  `id_user` int(11) NOT NULL,
-  `total_produk` int(11) NOT NULL,
-  `total_price` decimal(10,2) NOT NULL,
-  `placed_on` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `bukti_pembayaran` enum('pendding','completed','cancel') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_order_item`
---
-
-CREATE TABLE `tb_order_item` (
-  `id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL,
-  `produk_id` int(11) NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `price` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `tb_produk`
 --
 
@@ -95,26 +38,43 @@ CREATE TABLE `tb_produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data untuk tabel `tb_produk`
+--
+
+INSERT INTO `tb_produk` (`id_produk`, `id_brand`, `nama_produk`, `harga_normal`, `harga_diskon`, `stok`, `gambar_produk`) VALUES
+(5, 11, '11', 11.00, 11.00, 11, '23.png'),
+(6, 113233, '3123131', 1313.00, 13131.00, 1313, 'Screenshot 2024-11-06 154325.png'),
+(7, 12123, '1212', 313213.00, 313.00, 313, '2.2.png'),
+(8, 1212, '1213', 1244.00, 2344.00, 344, 'adres.png'),
+(9, 12344, '3434', 344.00, 344.00, 344, 'Cuplikan layar 2023-11-14 171511.png'),
+(10, 4, 'werg', 12345.00, 234.00, 23, 'image2.png');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `full_name` varchar(128) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `full_name`, `email`, `password`) VALUES
+(1, 'Aktar', 'aktar@gmail.com', '$2y$10$Jmf9Xk2y8m.fo3c/ZgKmzOrdIRkU05KSGLI0picKLEtr68ll7hjB.'),
+(4, 'iswan', 'wdiki9565@gmail.com', '$2y$10$9BDM09gK9I1P8VLG1FR84.5wwA27maBWukeCCb/u8uDE2HaVhGVue'),
+(5, 'admin', 'admin@gmail.com', '123456789'),
+(6, 'admin', 'admin@gmail.com', '123456789');
+
+--
 -- Indexes for dumped tables
 --
-
---
--- Indeks untuk tabel `tb_brand`
---
-ALTER TABLE `tb_brand`
-  ADD PRIMARY KEY (`id_brand`);
-
---
--- Indeks untuk tabel `tb_order`
---
-ALTER TABLE `tb_order`
-  ADD PRIMARY KEY (`id_user`);
-
---
--- Indeks untuk tabel `tb_order_item`
---
-ALTER TABLE `tb_order_item`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `tb_produk`
@@ -123,32 +83,26 @@ ALTER TABLE `tb_produk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
+-- Indeks untuk tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
-
---
--- AUTO_INCREMENT untuk tabel `tb_brand`
---
-ALTER TABLE `tb_brand`
-  MODIFY `id_brand` int(100) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT untuk tabel `tb_order`
---
-ALTER TABLE `tb_order`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT untuk tabel `tb_order_item`
---
-ALTER TABLE `tb_order_item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_produk`
 --
 ALTER TABLE `tb_produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT untuk tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
